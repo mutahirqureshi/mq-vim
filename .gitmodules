@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-wombat"]
 	path = .vim/bundle/vim-wombat
 	url = https://github.com/cschlueter/vim-wombat.git
+[submodule ".vim/bundle/taglist"]
+	path = .vim/bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
