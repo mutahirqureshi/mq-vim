@@ -27,7 +27,7 @@ while not found:
 	found = find_manifest(pwd)
 
 if found:
-	ANDROID_SDK = os.environ['ANDROID_SDK']
+	ANDROID_SDK = os.environ['ANDROID_HOME']
 	if ANDROID_SDK=='':
 		exit(1)
 
