@@ -1,0 +1,1 @@
+adblogcat.vba: call delete('/Users/mqureshi/.vim/bundle/adbLogCat/doc/adblogcat.txt')|call delete('/Users/mqureshi/.vim/bundle/adbLogCat/plugin/adblogcat.vim')
