@@ -29,3 +29,8 @@ map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 "Added by android-vim:
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 let g:SuperTabDefaultCompletionType = 'context'
+
+"Enable mouse
+set ttyfast
+set mouse=a
+set ttymouse=xterm2
