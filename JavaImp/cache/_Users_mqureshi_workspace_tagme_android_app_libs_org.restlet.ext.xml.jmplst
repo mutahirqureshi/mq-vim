@@ -1,0 +1,17 @@
+META-INF/
+META-INF/MANIFEST.MF
+org/
+org/restlet/
+org/restlet/ext/
+org/restlet/ext/xml/
+org/restlet/ext/xml/internal/
+org/restlet/ext/xml/DomRepresentation.class
+org/restlet/ext/xml/NodeList.class
+org/restlet/ext/xml/SaxRepresentation.class
+org/restlet/ext/xml/XmlConverter.class
+org/restlet/ext/xml/XmlRepresentation.class
+org/restlet/ext/xml/XmlWriter.class
+org/restlet/ext/xml/internal/AbstractXmlReader.class
+org/restlet/ext/xml/internal/ContextResolver.class
+META-INF/services/
+META-INF/services/org.restlet.engine.converter.ConverterHelper

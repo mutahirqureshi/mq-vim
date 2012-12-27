@@ -1,0 +1,14 @@
+META-INF/
+META-INF/MANIFEST.MF
+org/
+org/restlet/
+org/restlet/ext/
+org/restlet/ext/html/
+org/restlet/ext/html/internal/
+org/restlet/ext/html/FormData.class
+org/restlet/ext/html/FormDataSet.class
+org/restlet/ext/html/HtmlConverter.class
+org/restlet/ext/html/internal/FormReader.class
+org/restlet/ext/html/internal/FormUtils.class
+META-INF/services/
+META-INF/services/org.restlet.engine.converter.ConverterHelper

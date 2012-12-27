@@ -1,0 +1,2 @@
+ImageManager com.novoda.imageloader.core.ImageManager 
+

@@ -1,0 +1,15 @@
+META-INF/
+META-INF/MANIFEST.MF
+com/
+com/jakewharton/
+com/jakewharton/DiskLruCache$Editor$FaultHidingOutputStream.class
+com/jakewharton/DiskLruCache$1.class
+com/jakewharton/DiskLruCache$Entry.class
+com/jakewharton/DiskLruCache.class
+com/jakewharton/DiskLruCache$Snapshot.class
+com/jakewharton/DiskLruCache$Editor.class
+META-INF/maven/
+META-INF/maven/com.jakewharton/
+META-INF/maven/com.jakewharton/disklrucache/
+META-INF/maven/com.jakewharton/disklrucache/pom.xml
+META-INF/maven/com.jakewharton/disklrucache/pom.properties

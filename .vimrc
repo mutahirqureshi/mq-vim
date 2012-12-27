@@ -34,3 +34,13 @@ let g:SuperTabDefaultCompletionType = 'context'
 set ttyfast
 set mouse=n
 set ttymouse=xterm2
+
+"JavaImp setup
+let g:JavaImpPaths = $HOME . "/vim/JavaImp/jmplst," .
+  \ $HOME . "/workspace/tagme_android/app/src," .
+  \ $HOME . "/workspace/tagme_android/app/libs"
+
+let g:JavaImpDataDir = $HOME . "/vim/JavaImp"
+exe "set dict=" . g:JavaImpDataDir . "/JavaImp.txt" 
+set complete-=k 
+set complete+=k
