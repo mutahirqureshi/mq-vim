@@ -32,5 +32,5 @@ let g:SuperTabDefaultCompletionType = 'context'
 
 "Enable mouse
 set ttyfast
-set mouse=a
+set mouse=n
 set ttymouse=xterm2
