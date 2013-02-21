@@ -37,6 +37,9 @@ set ttymouse=xterm2
 
 "JavaImp setup
 let g:JavaImpPaths = $HOME . "/vim/JavaImp/jmplst," .
+  \ "/Applications/Android-SDK/platforms/android-16," .
+  \ $HOME . "/workspace/tagme_android/ext/ImageLoader/src," .
+  \ $HOME . "/workspace/tagme_android/ext/fastimage-lib/src," .
   \ $HOME . "/workspace/tagme_android/app/src," .
   \ $HOME . "/workspace/tagme_android/app/libs"
 
