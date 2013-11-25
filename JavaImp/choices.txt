@@ -1,3 +1,15 @@
+SQLException java.sql.SQLException android.database.SQLException 
+Serializable java.io.Serializable sunw.io.Serializable 
+Button android.widget.Button java.awt.Button 
+Editable android.text.Editable 
+TextWatcher android.text.TextWatcher 
+HttpsClientHelper org.restlet.ext.ssl.HttpsClientHelper 
+SSLSocketFactory org.apache.http.conn.ssl.SSLSocketFactory javax.net.ssl.SSLSocketFactory 
+PlainSocketFactory org.apache.http.conn.scheme.PlainSocketFactory 
+Scheme org.apache.http.conn.scheme.Scheme 
+SchemeRegistry org.apache.http.conn.scheme.SchemeRegistry 
+HttpClientHelper org.restlet.ext.httpclient.HttpClientHelper org.restlet.engine.adapter.HttpClientHelper org.restlet.engine.connector.HttpClientHelper 
+Protocol org.restlet.data.Protocol com.android.internal.util.Protocol 
 AppRater com.sidewalkapp.android.util.AppRater 
 AlertDialog android.app.AlertDialog 
 Uri android.net.Uri com.sun.jndi.toolkit.url.Uri com.sun.xml.internal.rngom.util.Uri com.sun.xml.internal.xsom.impl.util.Uri 
@@ -71,7 +83,7 @@ SidewalkActivity com.sidewalkapp.android.SidewalkActivity
 ChangeUsernameActivity com.sidewalkapp.android.ui.ChangeUsernameActivity 
 FontManager com.sidewalkapp.android.util.FontManager sun.font.FontManager 
 WeakReference java.lang.ref.WeakReference 
-AsyncTask android.os.AsyncTask com.novoda.imageloader.core.loader.util.AsyncTask 
+AsyncTask android.os.AsyncTask 
 LoaderTask com.novoda.imageloader.core.loader.util.LoaderTask 
 WindowManager android.view.WindowManager 
 Display android.view.Display 

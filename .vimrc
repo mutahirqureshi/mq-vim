@@ -47,3 +47,5 @@ let g:JavaImpDataDir = $HOME . "/vim/JavaImp"
 exe "set dict=" . g:JavaImpDataDir . "/JavaImp.txt" 
 set complete-=k 
 set complete+=k
+
+colorscheme delek

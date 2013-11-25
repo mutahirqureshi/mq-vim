@@ -492,6 +492,7 @@ AccessibilityEventSource android.view.accessibility.AccessibilityEventSource
 AccessibilityInjector android.webkit.AccessibilityInjector
 AccessibilityInjector.1 android.webkit.AccessibilityInjector.1
 AccessibilityInjector.CallbackHandler android.webkit.AccessibilityInjector.CallbackHandler
+AccessibilityInjector.TextToSpeechWrapper android.webkit.AccessibilityInjector.TextToSpeechWrapper
 AccessibilityInjectorFallback android.webkit.AccessibilityInjectorFallback
 AccessibilityInjectorFallback.AccessibilityWebContentKeyBinding android.webkit.AccessibilityInjectorFallback.AccessibilityWebContentKeyBinding
 AccessibilityInteractionClient android.view.accessibility.AccessibilityInteractionClient
@@ -3216,6 +3217,7 @@ BrowserFrame.2 android.webkit.BrowserFrame.2
 BrowserFrame.2.1 android.webkit.BrowserFrame.2.1
 BrowserFrame.2.2 android.webkit.BrowserFrame.2.2
 BrowserFrame.ConfigCallback android.webkit.BrowserFrame.ConfigCallback
+BrowserFrame.JSObject android.webkit.BrowserFrame.JSObject
 BrowserSupport com.sun.servicetag.BrowserSupport
 BrowserSupport.1 com.sun.servicetag.BrowserSupport.1
 BuddhistCalendar sun.util.BuddhistCalendar
@@ -3974,6 +3976,7 @@ CdmaLteUiccRecords.EfCsimSpnLoaded com.android.internal.telephony.cdma.CdmaLteUi
 CdmaLteUiccRecords.EfPlLoaded com.android.internal.telephony.cdma.CdmaLteUiccRecords.EfPlLoaded
 CdmaMmiCode com.android.internal.telephony.cdma.CdmaMmiCode
 CdmaSMSDispatcher com.android.internal.telephony.cdma.CdmaSMSDispatcher
+CdmaSMSDispatcher.1 com.android.internal.telephony.cdma.CdmaSMSDispatcher.1
 CdmaServiceStateTracker com.android.internal.telephony.cdma.CdmaServiceStateTracker
 CdmaServiceStateTracker.1 com.android.internal.telephony.cdma.CdmaServiceStateTracker.1
 CdmaServiceStateTracker.2 com.android.internal.telephony.cdma.CdmaServiceStateTracker.2
@@ -3981,6 +3984,8 @@ CdmaServiceStateTracker.3 com.android.internal.telephony.cdma.CdmaServiceStateTr
 CdmaSmsAddress com.android.internal.telephony.cdma.sms.CdmaSmsAddress
 CdmaSmsCbProgramData android.telephony.cdma.CdmaSmsCbProgramData
 CdmaSmsCbProgramData.1 android.telephony.cdma.CdmaSmsCbProgramData.1
+CdmaSmsCbProgramResults android.telephony.cdma.CdmaSmsCbProgramResults
+CdmaSmsCbProgramResults.1 android.telephony.cdma.CdmaSmsCbProgramResults.1
 CdmaSmsSubaddress com.android.internal.telephony.cdma.sms.CdmaSmsSubaddress
 CdmaSubscriptionSourceManager com.android.internal.telephony.cdma.CdmaSubscriptionSourceManager
 CeilingCall com.sun.org.apache.xalan.internal.xsltc.compiler.CeilingCall
@@ -9056,6 +9061,7 @@ FileDispatcher sun.nio.ch.FileDispatcher
 FileEntity org.apache.http.entity.FileEntity
 FileEntity org.restlet.engine.local.FileEntity
 FileEntry org.apache.commons.io.monitor.FileEntry
+FileException com.squareup.tape.FileException
 FileExistsException org.apache.commons.io.FileExistsException
 FileFileFilter org.apache.commons.io.filefilter.FileFileFilter
 FileFilter java.io.FileFilter
@@ -9101,6 +9107,10 @@ FileNameGenerator com.nostra13.universalimageloader.cache.disc.naming.FileNameGe
 FileNameMap java.net.FileNameMap
 FileNotFoundException java.io.FileNotFoundException
 FileObject javax.tools.FileObject
+FileObjectQueue com.squareup.tape.FileObjectQueue
+FileObjectQueue.1 com.squareup.tape.FileObjectQueue.1
+FileObjectQueue.Converter com.squareup.tape.FileObjectQueue.Converter
+FileObjectQueue.DirectByteArrayOutputStream com.squareup.tape.FileObjectQueue.DirectByteArrayOutputStream
 FileObserver android.os.FileObserver
 FileObserver.ObserverThread android.os.FileObserver.ObserverThread
 FileOutputStream java.io.FileOutputStream
@@ -11065,6 +11075,7 @@ IAudioRoutesObserver.Stub.Proxy android.media.IAudioRoutesObserver.Stub.Proxy
 IAudioService android.media.IAudioService
 IAudioService.Stub android.media.IAudioService.Stub
 IAudioService.Stub.Proxy android.media.IAudioService.Stub.Proxy
+IAutomationSupport com.android.uiautomator.testrunner.IAutomationSupport
 IBM437 sun.nio.cs.IBM437
 IBM437.Decoder sun.nio.cs.IBM437.Decoder
 IBM437.Encoder sun.nio.cs.IBM437.Encoder
@@ -12017,6 +12028,7 @@ ImportTree com.sun.source.tree.ImportTree
 ImporterTopLevel sun.org.mozilla.javascript.internal.ImporterTopLevel
 Imports sun.tools.java.Imports
 InMemoryCookieStore sun.net.www.protocol.http.InMemoryCookieStore
+InMemoryObjectQueue com.squareup.tape.InMemoryObjectQueue
 InPlaceDOMOutput com.sun.xml.internal.bind.v2.runtime.output.InPlaceDOMOutput
 InQueryExp javax.management.InQueryExp
 InaccessibleWSDLException com.sun.xml.internal.ws.wsdl.parser.InaccessibleWSDLException
@@ -14986,6 +14998,7 @@ LogService org.restlet.service.LogService
 LogStream java.rmi.server.LogStream
 LogSupport com.sun.activation.registries.LogSupport
 LogUtils org.restlet.engine.log.LogUtils
+LogValues com.sidewalkapp.android.util.logger.LogValues
 LogWrapperBase com.sun.corba.se.spi.logging.LogWrapperBase
 LogWrapperFactory com.sun.corba.se.spi.logging.LogWrapperFactory
 LogWriter android.support.v4.util.LogWriter
@@ -16445,6 +16458,7 @@ ModificationWatchpointEventSet com.sun.tools.example.debug.event.ModificationWat
 ModificationWatchpointRequest com.sun.jdi.request.ModificationWatchpointRequest
 ModificationWatchpointSpec com.sun.tools.example.debug.bdi.ModificationWatchpointSpec
 ModificationWatchpointSpec com.sun.tools.example.debug.tty.ModificationWatchpointSpec
+ModifiedUtf8 java.nio.charset.ModifiedUtf8
 Modifier com.sun.mirror.declaration.Modifier
 Modifier java.lang.reflect.Modifier
 Modifier javax.lang.model.element.Modifier
@@ -17138,6 +17152,7 @@ NavUtils.NavUtilsImplJB android.support.v4.app.NavUtils.NavUtilsImplJB
 NavUtilsJB android.support.v4.app.NavUtilsJB
 NavigableMap java.util.NavigableMap
 NavigableSet java.util.NavigableSet
+NavigationBar com.android.layoutlib.bridge.bars.NavigationBar
 NavigationFilter javax.swing.text.NavigationFilter
 NavigationFilter.FilterBypass javax.swing.text.NavigationFilter.FilterBypass
 Navigator com.sun.xml.internal.bind.v2.model.nav.Navigator
@@ -17837,6 +17852,8 @@ ObjectOutputStream.ReplaceTable java.io.ObjectOutputStream.ReplaceTable
 ObjectPool com.sun.org.apache.xml.internal.utils.ObjectPool
 ObjectQuery com.sun.tools.hat.internal.server.ObjectQuery
 ObjectQuery.1 com.sun.tools.hat.internal.server.ObjectQuery.1
+ObjectQueue com.squareup.tape.ObjectQueue
+ObjectQueue.Listener com.squareup.tape.ObjectQueue.Listener
 ObjectReader org.codehaus.jackson.map.ObjectReader
 ObjectReference com.sun.jdi.ObjectReference
 ObjectReferenceFactory org.omg.PortableInterceptor.ObjectReferenceFactory
@@ -18940,7 +18957,6 @@ PhoneStateListener.1 android.telephony.PhoneStateListener.1
 PhoneStateListener.2 android.telephony.PhoneStateListener.2
 PhoneSubInfo com.android.internal.telephony.PhoneSubInfo
 PhoneSubInfoProxy com.android.internal.telephony.PhoneSubInfoProxy
-PhoneSystemBar com.android.layoutlib.bridge.bars.PhoneSystemBar
 Photo com.sidewalkapp.android.model.Photo
 PhotoMethodDialogFragment com.sidewalkapp.android.ui.fragments.PhotoMethodDialogFragment
 PhotoResource com.sidewalkapp.android.api.resource.PhotoResource
@@ -19886,6 +19902,11 @@ Queue java.awt.Queue
 Queue java.util.Queue
 Queue sun.misc.Queue
 QueueElement sun.misc.QueueElement
+QueueFile com.squareup.tape.QueueFile
+QueueFile.1 com.squareup.tape.QueueFile.1
+QueueFile.Element com.squareup.tape.QueueFile.Element
+QueueFile.ElementInputStream com.squareup.tape.QueueFile.ElementInputStream
+QueueFile.ElementReader com.squareup.tape.QueueFile.ElementReader
 QueueProcessingType com.nostra13.universalimageloader.core.assist.QueueProcessingType
 QueuedJobCount javax.print.attribute.standard.QueuedJobCount
 QueuedWork android.app.QueuedWork
@@ -20592,6 +20613,7 @@ RemoteViewsAdapter.2 android.widget.RemoteViewsAdapter.2
 RemoteViewsAdapter.3 android.widget.RemoteViewsAdapter.3
 RemoteViewsAdapter.4 android.widget.RemoteViewsAdapter.4
 RemoteViewsAdapter.5 android.widget.RemoteViewsAdapter.5
+RemoteViewsAdapter.6 android.widget.RemoteViewsAdapter.6
 RemoteViewsAdapter.FixedSizeRemoteViewsCache android.widget.RemoteViewsAdapter.FixedSizeRemoteViewsCache
 RemoteViewsAdapter.RemoteAdapterConnectionCallback android.widget.RemoteViewsAdapter.RemoteAdapterConnectionCallback
 RemoteViewsAdapter.RemoteViewsAdapterServiceConnection android.widget.RemoteViewsAdapter.RemoteViewsAdapterServiceConnection
@@ -22194,6 +22216,7 @@ SerializationException com.sun.xml.internal.ws.encoding.soap.SerializationExcept
 SerializationHandler com.sun.org.apache.xml.internal.serializer.SerializationHandler
 SerializationTester java.awt.dnd.SerializationTester
 SerializationTester.1 java.awt.dnd.SerializationTester.1
+SerializedConverter com.squareup.tape.SerializedConverter
 SerializedForm com.sun.tools.javadoc.SerializedForm
 SerializedFormBuilder com.sun.tools.doclets.internal.toolkit.builders.SerializedFormBuilder
 SerializedFormWriter com.sun.tools.doclets.internal.toolkit.SerializedFormWriter
@@ -23655,6 +23678,7 @@ StaticStringsHash sun.rmi.rmic.iiop.StaticStringsHash
 StatisticMonitoredAttribute com.sun.corba.se.spi.monitoring.StatisticMonitoredAttribute
 StatisticsAccumulator com.sun.corba.se.spi.monitoring.StatisticsAccumulator
 Status org.restlet.data.Status
+StatusBar com.android.layoutlib.bridge.bars.StatusBar
 StatusBarIcon com.android.internal.statusbar.StatusBarIcon
 StatusBarIcon.1 com.android.internal.statusbar.StatusBarIcon.1
 StatusBarIconList com.android.internal.statusbar.StatusBarIconList
@@ -23817,6 +23841,7 @@ StoryFeedAdapter com.sidewalkapp.android.adapter.StoryFeedAdapter
 StoryFeedFragment com.sidewalkapp.android.ui.fragments.StoryFeedFragment
 StoryResource com.sidewalkapp.android.api.resource.StoryResource
 StoryService com.sidewalkapp.android.api.task.StoryService
+StoryWaterfallFragment com.sidewalkapp.android.ui.fragments.StoryWaterfallFragment
 StratumLineInfo com.sun.tools.jdi.StratumLineInfo
 StreamAttachment com.sun.xml.internal.ws.message.stream.StreamAttachment
 StreamBasedMessage com.sun.xml.internal.ws.api.message.stream.StreamBasedMessage
@@ -24858,11 +24883,15 @@ TargetLostException com.sun.org.apache.bcel.internal.generic.TargetLostException
 TargetVM com.sun.tools.jdi.TargetVM
 TargetVM.EventController com.sun.tools.jdi.TargetVM.EventController
 TargetedNotification javax.management.remote.TargetedNotification
+Task com.squareup.tape.Task
 Task com.sun.jmx.snmp.tasks.Task
 TaskEvent com.sun.source.util.TaskEvent
 TaskEvent.Kind com.sun.source.util.TaskEvent.Kind
+TaskInjector com.squareup.tape.TaskInjector
 TaskListener com.sun.source.util.TaskListener
+TaskQueue com.squareup.tape.TaskQueue
 TaskQueue java.util.TaskQueue
+TaskQueue.1 com.squareup.tape.TaskQueue.1
 TaskServer com.sun.jmx.snmp.tasks.TaskServer
 TaskService org.restlet.service.TaskService
 TaskService.1 org.restlet.service.TaskService.1
@@ -26196,8 +26225,16 @@ UUID.Holder java.util.UUID.Holder
 UUIDEncodingAlgorithm com.sun.xml.internal.fastinfoset.algorithm.UUIDEncodingAlgorithm
 UUIDEncodingAlgorithm.1 com.sun.xml.internal.fastinfoset.algorithm.UUIDEncodingAlgorithm.1
 UUSInfo com.android.internal.telephony.UUSInfo
+UiAutomatorTestCase com.android.uiautomator.testrunner.UiAutomatorTestCase
+UiCollection com.android.uiautomator.core.UiCollection
+UiDevice com.android.uiautomator.core.UiDevice
 UiModeManager android.app.UiModeManager
+UiObject com.android.uiautomator.core.UiObject
+UiObjectNotFoundException com.android.uiautomator.core.UiObjectNotFoundException
+UiScrollable com.android.uiautomator.core.UiScrollable
+UiSelector com.android.uiautomator.core.UiSelector
 UiThreadTest android.test.UiThreadTest
+UiWatcher com.android.uiautomator.core.UiWatcher
 UiccController com.android.internal.telephony.uicc.UiccController
 UintMap sun.org.mozilla.javascript.internal.UintMap
 UlawCodec com.sun.media.sound.UlawCodec
