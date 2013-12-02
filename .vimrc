@@ -1,4 +1,6 @@
-call pathogen#runtime_append_all_bundles()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+
+call pathogen#infect()
 call pathogen#helptags()
 
 autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
