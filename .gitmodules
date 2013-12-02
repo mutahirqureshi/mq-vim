@@ -31,9 +31,9 @@
 [submodule ".vim/bundle/AutoTag"]
 	path = .vim/bundle/AutoTag
 	url = https://github.com/vim-scripts/AutoTag.git
-[submodule ".vim/bundle/vim-ios"]
-	path = .vim/bundle/vim-ios
-	url = https://github.com/eraserhd/vim-ios.git
+#[submodule ".vim/bundle/vim-ios"]
+#	path = .vim/bundle/vim-ios
+#	url = https://github.com/eraserhd/vim-ios.git
 [submodule ".vim/bundle/clang_complete"]
 	path = .vim/bundle/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
