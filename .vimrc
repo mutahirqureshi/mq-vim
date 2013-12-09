@@ -28,6 +28,9 @@ filetype plugin on
 
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
+"Command-T stuff
+let g:CommandTMaxFiles=50000
+
 "Added by android-vim:
 autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 let g:SuperTabDefaultCompletionType = 'context'
