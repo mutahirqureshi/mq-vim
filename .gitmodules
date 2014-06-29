@@ -52,3 +52,6 @@
 [submodule ".vim/bundle/nerdtree-ack"]
 	path = .vim/bundle/nerdtree-ack
 	url = https://github.com/tyok/nerdtree-ack.git
+[submodule ".vim/bundle/ag-vim"]
+	path = .vim/bundle/ag-vim
+	url = https://github.com/rking/ag.vim.git
