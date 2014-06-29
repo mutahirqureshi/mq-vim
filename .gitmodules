@@ -25,9 +25,9 @@
 [submodule ".vim/bundle/taglist"]
 	path = .vim/bundle/taglist
 	url = https://github.com/vim-scripts/taglist.vim.git
-[submodule ".vim/bundle/JavaImp"]
-	path = .vim/bundle/JavaImp
-	url = https://github.com/vim-scripts/JavaImp.vim--Lee.git
+#[submodule ".vim/bundle/JavaImp"]
+#	path = .vim/bundle/JavaImp
+#	url = https://github.com/vim-scripts/JavaImp.vim--Lee.git
 [submodule ".vim/bundle/AutoTag"]
 	path = .vim/bundle/AutoTag
 	url = https://github.com/vim-scripts/AutoTag.git
