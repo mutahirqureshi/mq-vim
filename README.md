@@ -3,6 +3,10 @@ mq-vim
 
 use vim-nox package instead of vim-tiny/vim-basic. It contains python and ruby bindings
 
+### Setup
+1. ```ln -s ~/vim/.vimrc ~/.vimrc```
+2. ```ln -s ~/vim/.vim .vim```
+
 ### for Command-T
 ```bash
 rvm install 1.9.3
