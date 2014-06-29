@@ -10,3 +10,8 @@ rvm use 1.9.3
 cd ~/.vim/bundle/command-t/ruby/command-t
 ruby extconf.rb
 make
+
+Adding plugins
+--------------
+
+git submodule add REPO_URL .vim/bundle/PLUGIN_NAME
