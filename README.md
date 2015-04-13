@@ -15,6 +15,7 @@ cd ~/.vim/bundle/command-t/ruby/command-t
 ruby extconf.rb
 make
 ```
+if you get seg faults, run ```rake make``` in command-t submodule folder
 
 ### Adding plugins
 ```bash
