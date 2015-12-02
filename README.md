@@ -4,8 +4,13 @@ mq-vim
 use vim-nox package instead of vim-tiny/vim-basic. It contains python and ruby bindings
 
 ### Setup
-1. ```ln -s ~/vim/.vimrc ~/.vimrc```
-2. ```ln -s ~/vim/.vim .vim```
+1. ```cd ~```
+2. ```git clone <repo url> vim```
+3. ```cd vim```
+4. ```git submodule init```
+5. ```git submodule update```
+6. ```ln -s ~/vim/.vimrc ~/.vimrc```
+7. ```ln -s ~/vim/.vim .vim```
 
 ### for Command-T
 ```bash
