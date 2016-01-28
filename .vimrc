@@ -40,4 +40,7 @@ set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
-colorscheme delek
+colorscheme wombat
+
+"yank copies to OSX clipboard
+set clipboard=unnamed
