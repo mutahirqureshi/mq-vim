@@ -3,7 +3,7 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb,es6 autocmd BufWritePre <buffer> %s/\s\+$//e
 set shiftwidth=2
 set softtabstop=2
 set cindent
