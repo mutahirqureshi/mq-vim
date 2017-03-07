@@ -19,6 +19,8 @@ Plug 'tpope/vim-rails'
 Plug 'cschlueter/vim-wombat'
 Plug 'scrooloose/nerdcommenter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Initialize plugin system
 call plug#end()
@@ -66,3 +68,8 @@ colorscheme solarized
 
 "yank copies to OSX clipboard
 set clipboard=unnamed
+
+" airline
+let g:airline_theme='solarized'
+set laststatus=2
+
