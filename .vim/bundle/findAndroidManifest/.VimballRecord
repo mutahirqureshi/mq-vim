@@ -1,1 +1,0 @@
-findmanifest.vba: call delete('/Users/mqureshi/.vim/bundle/findAndroidManifest/doc/java.txt')|call delete('/Users/mqureshi/.vim/bundle/findAndroidManifest/after/ftplugin/java.vim')

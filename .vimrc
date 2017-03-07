@@ -1,7 +1,28 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
 
-call pathogen#infect()
-call pathogen#helptags()
+" Make sure you use single quotes
+
+Plug 'vim-scripts/AutoTag'
+Plug 'rking/ag.vim'
+Plug 'Rip-Rip/clang_complete'
+Plug 'vim-scripts/cocoa.vim'
+Plug 'wincent/Command-T'
+Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/javacomplete'
+Plug 'scrooloose/nerdtree'
+Plug 'taiansu/nerdtree-ag'
+Plug 'ervandew/supertab'
+Plug 'vim-scripts/taglist.vim'
+Plug 'tpope/vim-rails'
+Plug 'cschlueter/vim-wombat'
+Plug 'scrooloose/nerdcommenter'
+
+" Initialize plugin system
+call plug#end()
+
+"------------------------------------------------------------------------------------
 
 autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb,es6 autocmd BufWritePre <buffer> %s/\s\+$//e
 set shiftwidth=2
