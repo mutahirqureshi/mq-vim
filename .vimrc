@@ -18,6 +18,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-rails'
 Plug 'cschlueter/vim-wombat'
 Plug 'scrooloose/nerdcommenter'
+Plug 'altercation/vim-colors-solarized'
 
 " Initialize plugin system
 call plug#end()
@@ -61,7 +62,7 @@ set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
-colorscheme wombat
+colorscheme solarized
 
 "yank copies to OSX clipboard
 set clipboard=unnamed
