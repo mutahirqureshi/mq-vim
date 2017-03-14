@@ -18,7 +18,9 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-rails'
 Plug 'cschlueter/vim-wombat'
 Plug 'scrooloose/nerdcommenter'
-Plug 'altercation/vim-colors-solarized'
+"Plug 'altercation/vim-colors-solarized'
+"Plug 'dolph/vim-colors-solarized-black'
+Plug 'mutahirqureshi/vim-colors-solarized-black'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -35,7 +37,6 @@ set tabstop=2
 set expandtab
 set number
 set ruler
-set background=dark
 
 "set statusline=%F      "full filename
 "set statusline+=%m     "modified flag
@@ -64,7 +65,10 @@ set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
+set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
+"colorscheme wombat
 
 "yank copies to OSX clipboard
 set clipboard=unnamed
