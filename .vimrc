@@ -77,3 +77,5 @@ set clipboard=unnamed
 let g:airline_theme='solarized'
 set laststatus=2
 
+" treat .es6 files as .js
+au BufNewFile,BufRead *.es6 set filetype=javascript
