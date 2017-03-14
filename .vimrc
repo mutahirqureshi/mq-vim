@@ -23,6 +23,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'mutahirqureshi/vim-colors-solarized-black'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'pangloss/vim-javascript'
+Plug 'jelera/vim-javascript-syntax'
 
 " Initialize plugin system
 call plug#end()
