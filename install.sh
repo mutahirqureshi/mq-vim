@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo "DIR=$DIR"
+echo "vim DIR=$DIR"
 
 function create_link {
   source="$1"
@@ -14,7 +14,7 @@ function create_link {
     mv "$target" "${target}.bak"
   fi
 
-  ln -sf $source $target
+  ln -s $source $target
   printf "DONE!\n"
 }
 
