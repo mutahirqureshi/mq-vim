@@ -1,3 +1,4 @@
 JavaImp/cache
 _vim/plugged/**
 _vim/autoload/plug.vim.old
+*.swp
