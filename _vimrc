@@ -53,6 +53,8 @@ set ruler
 syntax on
 filetype plugin on
 
+let mapleader=","
+
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 "Command-T stuff
