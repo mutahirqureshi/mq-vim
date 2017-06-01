@@ -84,3 +84,10 @@ set laststatus=2
 
 " treat .es6 files as .js
 au BufNewFile,BufRead *.es6 set filetype=javascript
+
+" nerdcommenter
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign='left'
+
+" python-mode
+let g:pymode_lint=0
