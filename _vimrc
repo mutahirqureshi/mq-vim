@@ -25,7 +25,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
-Plug 'klen/python-mode'
+"Plug 'klen/python-mode' "Disable due to conflict with vimdiff
 
 " Initialize plugin system
 call plug#end()
