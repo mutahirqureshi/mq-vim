@@ -1,3 +1,5 @@
+let mapleader=","
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -7,9 +9,41 @@ Plug 'vim-scripts/AutoTag'
 "Plug 'rking/ag.vim'
 Plug 'Rip-Rip/clang_complete'
 Plug 'vim-scripts/cocoa.vim'
+
 "Plug 'ctrlpvim/ctrlp.vim'
+"" {{{
+"  set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+"  let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+"  let g:ctrlp_custom_ignore = {
+"    \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+"    \ 'file': '\v\.(exe|so|dll|class|apk|aar)$',
+"    \ }
+"  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+"" }}}
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+" {{{
+  " FZF + ripgrep for ag replacement
+  " --column: Show column number
+  " --line-number: Show line number
+  " --no-heading: Do not show file headings in results
+  " --fixed-strings: Search term as a literal string
+  " --ignore-case: Case insensitive search
+  " --no-ignore: Do not respect .gitignore, etc...
+  " --hidden: Search hidden files and folders
+  " --follow: Follow symlinks
+  " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+  " --color: Search color options
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+  set grepprg=rg\ --vimgrep
+
+  nnoremap <leader>p :History<CR>
+  nnoremap <leader>b :Buffers<CR>
+  nnoremap <leader>t :Files<CR>
+" }}}
+"
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/javacomplete'
@@ -19,15 +53,36 @@ Plug 'ervandew/supertab'
 Plug 'vim-scripts/taglist.vim'
 Plug 'tpope/vim-rails'
 Plug 'cschlueter/vim-wombat'
+
 Plug 'scrooloose/nerdcommenter'
+" {{{
+  " Align line-wise comment delimiters flush left instead of following code indentation
+  let g:NERDDefaultAlign='left'
+" }}}
+
 "Plug 'altercation/vim-colors-solarized'
 "Plug 'dolph/vim-colors-solarized-black'
+
 Plug 'mutahirqureshi/vim-colors-solarized-black'
+" {{{
+  let g:solarized_termcolors=256
+" }}}
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" {{{
+let g:airline_theme='solarized'
+set laststatus=2
+" }}}
+
 Plug 'pangloss/vim-javascript'
 Plug 'jelera/vim-javascript-syntax'
+
 "Plug 'klen/python-mode' "Disable due to conflict with vimdiff
+"" {{{
+"  let g:pymode_lint=0
+"" }}}
+
 
 " Initialize plugin system
 call plug#end()
@@ -57,64 +112,20 @@ set backspace=indent,eol,start
 syntax on
 filetype plugin on
 
-let mapleader=","
+set background=dark
+colorscheme solarized
+"colorscheme wombat
 
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-"Command-T stuff
-let g:CommandTMaxFiles=50000
-
-"Added by android-vim:
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-let g:SuperTabDefaultCompletionType = 'context'
 
 "Enable mouse
 set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
-"colorscheme wombat
-
 "yank copies to OSX clipboard
 set clipboard=unnamed
-
-" airline
-let g:airline_theme='solarized'
-set laststatus=2
 
 " treat .es6 files as .js
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
-" nerdcommenter
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign='left'
-
-" python-mode
-let g:pymode_lint=0
-
-" ctrlp
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll|class|apk|aar)$',
-  \ }
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" FZF + ripgrep for ag replacement
-" --column: Show column number
-" --line-number: Show line number
-" --no-heading: Do not show file headings in results
-" --fixed-strings: Search term as a literal string
-" --ignore-case: Case insensitive search
-" --no-ignore: Do not respect .gitignore, etc...
-" --hidden: Search hidden files and folders
-" --follow: Follow symlinks
-" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
-" --color: Search color options
-command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-set grepprg=rg\ --vimgrep
