@@ -4,10 +4,12 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 
 Plug 'vim-scripts/AutoTag'
-Plug 'rking/ag.vim'
+"Plug 'rking/ag.vim'
 Plug 'Rip-Rip/clang_complete'
 Plug 'vim-scripts/cocoa.vim'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-scripts/javacomplete'
@@ -40,6 +42,7 @@ set tabstop=2
 set expandtab
 set number
 set ruler
+set backspace=indent,eol,start
 
 "set statusline=%F      "full filename
 "set statusline+=%m     "modified flag
@@ -91,3 +94,27 @@ let g:NERDDefaultAlign='left'
 
 " python-mode
 let g:pymode_lint=0
+
+" ctrlp
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|class|apk|aar)$',
+  \ }
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" FZF + ripgrep for ag replacement
+" --column: Show column number
+" --line-number: Show line number
+" --no-heading: Do not show file headings in results
+" --fixed-strings: Search term as a literal string
+" --ignore-case: Case insensitive search
+" --no-ignore: Do not respect .gitignore, etc...
+" --hidden: Search hidden files and folders
+" --follow: Follow symlinks
+" --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
+" --color: Search color options
+command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
+set grepprg=rg\ --vimgrep
