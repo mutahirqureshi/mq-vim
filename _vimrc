@@ -110,7 +110,7 @@ set backspace=indent,eol,start
 "set laststatus=2
 
 syntax on
-filetype plugin on
+filetype plugin indent on
 
 set background=dark
 colorscheme solarized
