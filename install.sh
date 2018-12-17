@@ -2,12 +2,12 @@
 
 set -e
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-echo "vim DIR=$DIR"
+VIM="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo "VIM=$VIM"
 
-. ../funcs.sh
+. $ROOT/funcs.sh
 
-create_links "$DIR"
+create_links "$VIM"
 
 # Install vim plugins using plug.vim
 vim -E -c PlugUpgrade -c PlugClean! -c PlugUpdate -c qa
