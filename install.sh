@@ -1,28 +1,13 @@
 #!/usr/bin/env bash
 
+set -e
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "vim DIR=$DIR"
 
-function create_link {
-  source="$1"
-  target="$2"
+. ../funcs.sh
 
-  printf "linking %s to %s..." $source $target
-
-  if [ -e $target ]; then
-    printf "moving already existing %s to %s.bak..." $target $target
-    mv "$target" "${target}.bak"
-  fi
-
-  ln -s $source $target
-  printf "DONE!\n"
-}
-
-for i in "${DIR}"/_*
-do
-  base=$(basename "$i")
-  create_link "$i" "${HOME}/${base/_/.}"
-done
+create_links "$DIR"
 
 # Install vim plugins using plug.vim
 vim -E -c PlugUpgrade -c PlugClean! -c PlugUpdate -c qa

@@ -1,6 +1,9 @@
 mq-vim
 ======
 
+### Requirements
+depends on the funcs.sh in dotfiles repo
+
 ### Setup
 1. ```cd ~```
 2. ```git clone <repo url> vim```
