@@ -5,7 +5,7 @@ set -e
 VIM="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo "VIM=$VIM"
 
-. $ROOT/funcs.sh
+. $VIM/../funcs.sh
 
 create_links "$VIM"
 
