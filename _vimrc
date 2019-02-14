@@ -71,7 +71,7 @@ Plug 'mutahirqureshi/vim-colors-solarized-black'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " {{{
-let g:airline_theme='solarized'
+let g:airline_theme='dark'
 set laststatus=2
 " }}}
 
@@ -83,6 +83,20 @@ Plug 'jelera/vim-javascript-syntax'
 "  let g:pymode_lint=0
 "" }}}
 
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/syntastic'
+" {{{
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" }}}
+
+Plug 'christoomey/vim-system-copy'
 
 " Initialize plugin system
 call plug#end()
@@ -124,7 +138,8 @@ set mouse=n
 set ttymouse=xterm2
 
 "yank copies to OSX clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
+" use vim-system-copy plugin instead
 
 " treat .es6 files as .js
 au BufNewFile,BufRead *.es6 set filetype=javascript
