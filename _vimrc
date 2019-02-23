@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+Plug 'tpope/vim-sensible'
+
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " {{{
@@ -49,7 +51,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " {{{
 let g:airline_theme='dark'
-set laststatus=2
 " }}}
 
 Plug 'airblade/vim-gitgutter'
@@ -80,10 +81,6 @@ set cindent
 set tabstop=2
 set expandtab
 set number
-set ruler
-set backspace=indent,eol,start
-
-syntax enable
 
 set background=dark
 colorscheme solarized
@@ -93,8 +90,10 @@ set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
-" treat .es6 files as .js
-au BufNewFile,BufRead *.es6 set filetype=javascript
+try
+  source ~/.vimrc.local
+catch
+endtry
 
-"Make sure this happens after all plugins have been added
+"This needs to run after all plugins have loaded
 filetype plugin indent on
