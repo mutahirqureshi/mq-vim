@@ -68,6 +68,10 @@ let g:syntastic_check_on_wq = 0
 
 Plug 'christoomey/vim-system-copy'
 Plug 'mkitt/tabline.vim'
+Plug 'morhetz/gruvbox'
+" {{{
+  let g:gruvbox_italic=1
+" }}}
 
 " Initialize plugin system
 call plug#end()
@@ -82,8 +86,9 @@ set tabstop=2
 set expandtab
 set number
 
+set termguicolors
+colorscheme gruvbox
 set background=dark
-colorscheme solarized
 
 "Enable mouse
 set ttyfast
