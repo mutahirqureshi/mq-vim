@@ -70,7 +70,11 @@ Plug 'christoomey/vim-system-copy'
 Plug 'mkitt/tabline.vim'
 Plug 'morhetz/gruvbox'
 " {{{
-  let g:gruvbox_italic=1
+  let g:gruvbox_italic=0
+  let g:gruvbox_contrast_dark='hard'
+  let g:gruvbox_contrast_light='hard'
+
+  set t_ut=
 " }}}
 
 " Initialize plugin system
@@ -86,6 +90,8 @@ set tabstop=2
 set expandtab
 set number
 
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors
 colorscheme gruvbox
 set background=dark
