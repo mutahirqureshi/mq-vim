@@ -83,10 +83,14 @@ call plug#end()
 "------------------------------------------------------------------------------------
 
 autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb,es6,py autocmd BufWritePre <buffer> %s/\s\+$//e
-set shiftwidth=2
-set softtabstop=2
+" stricter indenting rules for C programs
 set cindent
+" when indenting with '>', use 2 spaces width
+set shiftwidth=2
+" show existing tab with 2 spaces width
 set tabstop=2
+set softtabstop=2
+" On pressing tab, insert spaces instead
 set expandtab
 set number
 
