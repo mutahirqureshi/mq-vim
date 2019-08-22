@@ -76,6 +76,12 @@ Plug 'morhetz/gruvbox'
 
   set t_ut=
 " }}}
+"
+Plug 'thaerkh/vim-workspace'
+" {{{
+  nnoremap <leader>s :ToggleWorkspace<CR>
+  let g:workspace_autosave_always = 1
+" }}}
 
 " Initialize plugin system
 call plug#end()
