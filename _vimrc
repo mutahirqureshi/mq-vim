@@ -111,6 +111,10 @@ set ttyfast
 set mouse=n
 set ttymouse=xterm2
 
+" Open new split panes to the right and bottom
+set splitbelow
+set splitright
+
 try
   source ~/.vimrc.local
 catch
