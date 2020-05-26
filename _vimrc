@@ -115,6 +115,9 @@ set ttymouse=xterm2
 set splitbelow
 set splitright
 
+" Highlight current cursor position
+set cursorline
+
 try
   source ~/.vimrc.local
 catch
