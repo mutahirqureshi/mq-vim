@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 " {{{
   " FZF + ripgrep for ag replacement
