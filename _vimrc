@@ -83,6 +83,8 @@ Plug 'thaerkh/vim-workspace'
   let g:workspace_autosave_always = 1
 " }}}
 
+Plug 'konfekt/vim-select-replace'
+
 " Initialize plugin system
 call plug#end()
 
