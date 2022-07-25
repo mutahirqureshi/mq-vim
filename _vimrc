@@ -66,7 +66,9 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 " }}}
 
-Plug 'christoomey/vim-system-copy'
+"disable this plugin due to change highlighted text delay:
+" https://github.com/christoomey/vim-system-copy/issues/2
+"Plug 'christoomey/vim-system-copy'
 Plug 'mkitt/tabline.vim'
 Plug 'morhetz/gruvbox'
 " {{{
