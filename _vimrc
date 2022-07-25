@@ -85,6 +85,15 @@ Plug 'thaerkh/vim-workspace'
 
 Plug 'konfekt/vim-select-replace'
 
+Plug 'kshenoy/vim-signature'
+" {{{
+" ]" -> next global mark
+  nnoremap ]" :<C-U>call signature#mark#Goto("next", "spot", "global")<CR>
+
+" [" -> previous global mark
+  nnoremap [" :<C-U>call signature#mark#Goto("prev", "spot", "global")<CR>
+" }}}
+
 " Initialize plugin system
 call plug#end()
 
