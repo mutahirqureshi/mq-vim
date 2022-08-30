@@ -96,6 +96,8 @@ Plug 'kshenoy/vim-signature'
   nnoremap [" :<C-U>call signature#mark#Goto("prev", "spot", "global")<CR>
 " }}}
 
+Plug 'ludovicchabant/vim-lawrencium'
+
 " Initialize plugin system
 call plug#end()
 
