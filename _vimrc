@@ -98,6 +98,8 @@ Plug 'kshenoy/vim-signature'
 
 Plug 'ludovicchabant/vim-lawrencium'
 
+Plug 'maxbrunsfeld/vim-yankstack'
+
 " Initialize plugin system
 call plug#end()
 
