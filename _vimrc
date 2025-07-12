@@ -53,7 +53,16 @@ Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='dark'
 " }}}
 
-Plug 'airblade/vim-gitgutter'
+if has('nvim') || has('patch-8.0.902')
+  Plug 'mhinz/vim-signify'
+else
+  Plug 'mhinz/vim-signify', { 'tag': 'legacy' }
+endif
+" {{{
+" default updatetime 4000ms is not good for async update
+set updatetime=100
+" }}}
+
 Plug 'scrooloose/syntastic'
 " {{{
 set statusline+=%#warningmsg#
