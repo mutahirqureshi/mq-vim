@@ -109,6 +109,8 @@ Plug 'ludovicchabant/vim-lawrencium'
 
 Plug 'maxbrunsfeld/vim-yankstack'
 
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
+
 " Initialize plugin system
 call plug#end()
 
