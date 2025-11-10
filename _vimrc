@@ -116,7 +116,7 @@ call plug#end()
 
 "------------------------------------------------------------------------------------
 
-autocmd FileType c,cpp,java,php,html,js,css,h,m,rb,erb,es6,py autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c,cpp,go,java,php,html,js,css,h,m,rb,erb,es6,py autocmd BufWritePre <buffer> %s/\s\+$//e
 " stricter indenting rules for C programs
 set cindent
 " when indenting with '>', use 2 spaces width
