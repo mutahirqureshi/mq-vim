@@ -110,6 +110,11 @@ Plug 'ludovicchabant/vim-lawrencium'
 Plug 'maxbrunsfeld/vim-yankstack'
 
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
+" {{{
+nmap <leader>y <Plug>OSCYankOperator
+nmap <leader>yy <leader>y_
+vmap <leader>y <Plug>OSCYankVisual
+" }}}
 
 " Initialize plugin system
 call plug#end()
