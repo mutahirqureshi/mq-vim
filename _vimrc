@@ -23,7 +23,13 @@ Plug 'junegunn/fzf.vim'
   " --glob: Additional conditions for search (in this case ignore everything in the .git/ folder)
   " --color: Search color options
   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>), 1, <bang>0)
-  set grepprg=rg\ --vimgrep
+
+  " :Rg <pattern> <path>
+  command! -complete=file -bang -nargs=* Rg
+    \ call fzf#vim#grep("rg --with-filename --column --line-number --no-heading --color=always --smart-case -- ".<q-args>, fzf#vim#with_preview(), <bang>0)
+
+  set grepprg=rg\ --vimgrep\ --smart-case\ --no-heading
+  let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore --hidden'
 
   nnoremap <leader>p :History<CR>
   nnoremap <leader>b :Buffers<CR>
