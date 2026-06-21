@@ -10,4 +10,4 @@ echo "VIM=$VIM"
 create_links "$VIM"
 
 # Install vim plugins using plug.vim
-vim -E -c PlugUpgrade -c PlugClean! -c PlugUpdate -c qa
+vim -E -c PlugUpgrade -c PlugClean! -c PlugUpdate -c qa || true
